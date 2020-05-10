@@ -1,6 +1,10 @@
 # discord-bot
 A friendly bot that talks to you on Discord and listens to your commands
 
+#### Try it here-
+Bot name - DiscordBot
+Invite link - https://discord.com/api/oauth2/authorize?client_id=708750207114018856&permissions=0&scope=bot
+
 ---
 
 #### Functionalities-

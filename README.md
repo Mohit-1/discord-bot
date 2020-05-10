@@ -1,6 +1,8 @@
 # discord-bot
 A friendly bot that talks to you on Discord and listens to your commands
 
+---
+
 #### Functionalities-
 1. The bot replies to a "Hi" with a "Hey"
 2. The bot will search for the user provided query on Google and return top 5 links for the same.
@@ -15,12 +17,16 @@ Usage -
 
     !recent madrid # This will return "real madrid" as it was searched earlier and was stored in the user's history
 
+---
+
 #### Pre-requisites-
 `redis-server and redis-cli`
 
 [Optional] To ensure that the process running the bot is highly available, it is advisable to use tools like `supervisor`
 
 Refer to **sample_supervisord.conf** for sample configuration required to orchestrate the process running the bot through supervisor
+
+---
 
 #### Environment setup-
 Create a virtual environment and install the dependencies present in **requirements.txt**
@@ -29,6 +35,7 @@ Create a file titled **.env** in the folder containing the bot.py and add the fo
 
 `DISCORD_TOKEN={your-bot's-token}`
 
+---
 
 #### Usage-
 
@@ -37,3 +44,4 @@ Once the virtual environment is activated and all the dependencies are installed
 Navigate to the discord-bot folder and execute the python script **bot.py**
 
 	`python bot.py`
+

@@ -13,7 +13,7 @@ For example, if you want the bot to search for "real madrid", issue the command 
 
 Usage -
 
-    `!recent madrid` # This will return "real madrid" as it was searched earlier and was stored in the user's history
+    !recent madrid # This will return "real madrid" as it was searched earlier and was stored in the user's history
 
 #### Pre-requisites-
 `redis-server and redis-cli`

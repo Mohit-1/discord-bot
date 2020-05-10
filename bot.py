@@ -18,7 +18,8 @@ async def return_links(ctx):
     query = ctx.message.content.lstrip("!google").lstrip() # The content is of the form "!google national anthem"
     links = search_on_google(query)
 
-    await ctx.send(links)
+    await ctx.send("The top 5 links matching the query '{}' are- ".format(query))
+    await ctx.send("\n".join(links))
 
     # Once the top 5 links are returned to the user
     # we will append the searched term to Redis in a list

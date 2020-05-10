@@ -6,7 +6,7 @@ from helpers import (get_redis_connection, append_query_to_search_history,
                      get_recent_searches, search_on_google)
 from configurations import (COMMAND_PREFIX, INCOMING_MESSAGE, REPLY)
 
-
+# Load the data from the .env file
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
@@ -20,6 +20,9 @@ async def return_links(ctx):
 
     await ctx.send(links)
 
+    # Once the top 5 links are returned to the user
+    # we will append the searched term to Redis in a list
+    # where the user's id will be the key for the list
     user_id = ctx.message.author.id
     append_query_to_search_history(user_id, query)
 
@@ -36,7 +39,7 @@ async def get_recent_matches(ctx):
 
 @bot.event
 async def on_message(message):
-    if message.author == bot.user:
+    if message.author == bot.user:  # We don't want the bot to reply to itself
         return
 
     if message.content.lower() == INCOMING_MESSAGE:

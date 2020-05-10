@@ -48,5 +48,10 @@ Once the virtual environment is activated and all the dependencies are installed
 
 Navigate to the discord-bot folder and execute the python script **bot.py**
 
-	`python bot.py`
+	python bot.py
+
+Else if using supervisor, simply run -
+
+	sudo supervisorctl start discord_bot
+
 

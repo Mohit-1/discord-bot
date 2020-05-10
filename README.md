@@ -18,7 +18,7 @@ Usage -
 #### Pre-requisites-
 `redis-server and redis-cli`
 
-`supervisord` (To ensure that the process running the bot is highly available)
+`supervisord` (To ensure that the process running the bot is highly available, refer to sample_supervisord.conf for orchestrating the process using supervisor)
 
 
 #### Usage-

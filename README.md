@@ -18,9 +18,22 @@ Usage -
 #### Pre-requisites-
 `redis-server and redis-cli`
 
-`supervisord` (To ensure that the process running the bot is highly available, refer to sample_supervisord.conf for orchestrating the process using supervisor)
+[Optional] To ensure that the process running the bot is highly available, it is advisable to use tools like `supervisor`
+
+Refer to **sample_supervisord.conf** for sample configuration required to orchestrate the process running the bot through supervisor
+
+#### Environment setup-
+Create a virtual environment and install the dependencies present in **requirements.txt**
+
+Create a file titled **.env** in the folder containing the bot.py and add the following line to it-
+
+`DISCORD_TOKEN={your-bot's-token}`
 
 
 #### Usage-
 
-`python bot.py`
+Once the virtual environment is activated and all the dependencies are installed, and the .env file is setup
+
+Navigate to the discord-bot folder and execute the python script **bot.py**
+
+	`python bot.py`
